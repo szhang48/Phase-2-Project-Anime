@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react'
+import Header from "./components/Header";
+import AnimeList from "./components/AnimeList";
 
 const animesApi = "https://api.jikan.moe/v4/anime"
 
@@ -12,8 +14,11 @@ function App() {
   }, [])
 
   return (
-    <div className="App">Anime aslkmdlakmd</div>
-  );
+    <div className="App">
+    <Header animeList={animeList}/>
+
+    </div>
+    );
 }
 
 export default App; 
